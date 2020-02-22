@@ -45,7 +45,7 @@ class CountryUnitTest {
     }
 
     private fun whenJSONDataAreReadAndParsed() {
-        mvm.fetchCountries(CountryName = "New Zealand")
+        mvm.fetchCountries()
     }
 
     private fun thenTheCollectionSizeShouldBeGreaterThanZero() {
