@@ -24,7 +24,6 @@ class CountryUnitTest {
     @Before
     fun populateCountries() {
         mvm = MainViewModel()
-
     }
 
     @Test
@@ -42,11 +41,11 @@ class CountryUnitTest {
     }
 
     private fun givenViewModelIsInitialized() {
-
+        mvm = MainViewModel()
     }
 
     private fun whenJSONDataAreReadAndParsed() {
-        mvm.fetchCountries()
+        mvm.fetchCountries(CountryName = "New Zealand")
     }
 
     private fun thenTheCollectionSizeShouldBeGreaterThanZero() {
